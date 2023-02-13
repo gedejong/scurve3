@@ -1,0 +1,54 @@
+[tool.poetry]
+name = "scurve3"
+version = "0.1.0"
+description = ""
+authors = ["Edwin de Jong <edejong@fastmail.fm>"]
+readme = "README.md"
+
+[tool.poetry.dependencies]
+python = "^3.11"
+pycairo = "^1.23"
+cubictemp = "^2.0"
+image = "^1.5.33"
+pillow = "^9.4.0"
+
+
+[tool.poetry.group.dev.dependencies]
+black = "^23.1.0"
+flake8-comprehensions = "^3.10.1"
+flake8-docstrings = "^1.7.0"
+flake8-eradicate = "^1.4.0"
+flake8-spellcheck = "^0.28.0"
+flake8-pytest-style = "^1.7.0"
+flake8-mutable = "^1.2.0"
+flake8-isort = "^6.0.0"
+flake8-builtins = "^2.1.0"
+flake8-bugbear = "^23.1.20"
+flakeheaven = "^3.2.1"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
+
+[tool.flakeheaven]
+exclude = ["README.rst", "README.md"]
+format = "colored"
+max_line_length = 88
+show_source = true
+
+[tool.flakeheaven.plugins]
+flake8-bandit = ["+*", "-S322"]
+flake8-bugbear = ["+*"]
+flake8-builtins = ["+*"]
+flake8-comprehensions = ["+*"]
+flake8-darglint = ["+*"]
+flake8-docstrings = ["+*"]
+flake8-eradicate = ["+*"]
+flake8-isort = ["+*"]
+flake8-mutable = ["+*"]
+flake8-pytest-style = ["+*"]
+# flake8-spellcheck = ["+*"]
+mccabe = ["+*"]
+pycodestyle = ["+*"]
+pyflakes = ["+*"]
+pylint = ["+*"]

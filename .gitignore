@@ -1,0 +1,14 @@
+.idea
+*.lock
+**/__pycache__/*
+
+.DS_Store
+build
+*.swp
+*.pyc
+*.pyo
+*.swo
+tmp.*
+tmp
+.coverage
+
